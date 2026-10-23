@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "firmware-auditor"
+version = "1.0.0"
+description = "Auditor estático de segurança para firmware IoT e Linux embarcado"
+requires-python = ">=3.10"
+dependencies = [
+    "pyelftools>=0.29"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0.0"]
+
+[project.scripts]
+firmware-auditor = "cli:cli"
+
+[tool.setuptools]
+py-modules = ["cli", "__main__"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["core*", "analyzers*"]

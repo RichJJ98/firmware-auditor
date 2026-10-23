@@ -1,0 +1,10 @@
+@"
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.tmp_fixtures/
+test_rootfs/
+report.json
+report.sarif
+"@ | Out-File -Encoding utf8 .gitignore
