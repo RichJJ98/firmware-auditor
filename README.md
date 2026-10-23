@@ -1,5 +1,7 @@
 # 🛡️ firmware-auditor  
 
+[![CI](https://github.com/RichJJ98/firmware-auditor/actions/workflows/ci.yml/badge.svg)](https://github.com/RichJJ98/firmware-auditor/actions/workflows/ci.yml)
+
 > Fast, static security auditor for unpacked IoT & embedded Linux rootfs images. Designed for DevSecOps pipelines and firmware posture auditing.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-00FF41.svg?style=flat-square&labelColor=000000)](LICENSE)
